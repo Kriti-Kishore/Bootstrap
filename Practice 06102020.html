@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Banking</h2>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open Form
+  </button>
+
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h4 class="modal-title">Enter Check Details</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <table border="5" cellpadding="20">
+          <tr>
+          <td>
+          <form>
+          	Name on Check
+            	<input type="text" class="form-control" placeholder="Enter Name" id="name">
+            
+            Enter Amount
+            	<input type="text" class="form-control" placeholder="Enter Amount" id="amount">
+            Check Number
+            	<input type="text" class="form-control" placeholder="01023456789" id="number">
+            Routing Number <a href="#" data-toggle="tooltip" title="The First 9 Digits in the Bottom Left of Check">*</a>
+            	<input type="text" class="form-control" placeholder="Enter Amount" id="amount">
+          </form>
+          </td>
+          </tr>
+          </table>
+          
+          <script>
+          $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+          });
+          </script>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger" data-dismiss="modal">Submit</button>&nbsp
+          <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Library Mgt System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      background-image:url("book.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    table, th, td {
+     border: 5px solid black;
+     border-collapse: collapse;
+    }
+    table.center {
+     margin-left:auto; 
+     margin-right:auto;
+     background: rgb(0,0,0,0.8);
+     width: 350px;
+     height: 100px;
+   }
+   h2{
+    text-decoration-line: underline;
+    position: relative;
+   }
+</style>
+</head>
+<body>
+  <div class="container">
+   <a class="navbar-brand" href="#"><img src="books.jpg" alt="logo" style="width: 100px;height:80px;margin-left: 150px;"></a> 
+  <h1 style="font-size: 35px;font-family: sans-serif;margin-top: 30px;"><mark style="background-color:lightblue;"><em><u><b>
+  LIBRARY MANAGEMENT SYSTEM</b></u></em></mark></h1>
+  <button type="button" class="btn btn-default btn-sm pull-right">
+  <span class="glyphicon glyphicon-user"></span>User
+  </button>
+  <button type="button" class="btn btn-info btn-sm pull-right">
+  <span class="glyphicon glyphicon-search"></span>Search
+  </button>
+  <button type="button" class="btn btn-success btn-sm pull-right">
+  <span class="glyphicon glyphicon-log-in"></span>Login
+  </button>
+  <a href="#"><span class="glyphicon glyphicon-book pull-right">Book</span></a>
+  <ul class="breadcrumb" style="margin-top: 50px; background-color: pink;">
+    <li><a href="lib mgt.html">Home</a></li>
+    <li><a href="lib mgt2.html">List of Books</a></li>
+    <li><a href="lib mgt3.html">Details</a>
+  </ul>
+  </div>
+  <div class="container">
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo" style="margin-left:30px;
+  margin-top:20px;">Personal Info</button>
+  <div id="demo" class="collapse pull-right">
+    <p style="color: white;"><b>Username:Kriti Kishore Password:12345</b></p>
+  </div>
+  <div class="container">
+    <table class="center" style="text-align:center;padding-top:360px;margin-left:450px;margin-top:10px;color: white;">
+      <th style="text-align: center;color: white;">
+       <img src="avatar.jpg" style="width: 50px"> 
+       <h2><b>LOGIN FORM</b><a href="#" style="margin-left: 50px;"><span class="glyphicon glyphicon-calendar"></span></a></h2>
+      </th>
+      <tr>
+      <td><h4><b>USERNAME</b><a href="#"><span class="glyphicon glyphicon-user"></span></a></h4></td>
+      </tr>
+      <tr>
+      <td style="color: black;"><input class="table-control" type="text" name="name" placeholder=" USERNAME"></td>
+      </tr>
+      <tr>
+      <td><h4><b>PASSWORD</b><a href="#"><span class="glyphicon glyphicon-eye-close"></span></h4></td>
+      </tr>
+      <tr>
+      <td style="color: black;"><input class="table-control" type="password" name="name" placeholder=" PASSWORD"></td>
+      </tr>
+      <tr>
+      <td><label><input type="checkbox" name="remember"> Remember me</label></td>
+      </tr>
+      <td>
+      <button class="btn btn-primary" type="submit" name="Submit">SUBMIT</button>
+      <button class="btn btn-danger" type="edit" name="Edit">EDIT</button>
+      </td>
+    </table>  
+  </div>
+  </div>
+  <div class="container">
+  <ul class="pagination" style="margin-left: 18px;margin-top: -18px;border:2px solid black;">
+    <li><a href="lib mgt.html">1</a></li>
+    <li><a href="lib mgt2.html">2</a></li>
+    <li><a href="lib mgt3.html">3</a></li>
+  </ul>
+ </div>
+ </body>
+</html>

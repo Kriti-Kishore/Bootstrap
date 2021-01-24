@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>ABOUT ME</h2>
+  <p><strong>Note :</strong> The data provided is <mark><b> 100% TRUE </b></mark></p>
+  <div id="accordion">
+
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          <b>General Details</b>&nbsp<img src="avatar.png" width=30>
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>Name : Saksham Verma</p>
+          <p>Nick Name : Pulak</p>
+          <p>Occupation : Student</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        <b>Personal Details</b>&nbsp<img src="avatar2.png" width=30>
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>Contact : 9919078321</p>
+          <p>E-mail : saksham1129verma@gmail.com</p>
+          <p>Address : Law Gate, Lovely Professional University - Phagwara (Punjab)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          <b>Professional Details</b>&nbsp<img src="avatar3.png" width=30>
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>Current Studies : Bachelors in Computer Application (From : Lovely Professional University)</p>
+          <p>Earlier Studies : 12th CBSE - (From : Dayawati Modi Academy)</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    
+</body>
+</html>

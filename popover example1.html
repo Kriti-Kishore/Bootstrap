@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>.container {
+    position: relative;
+    text-align: center;
+  }
+
+  .button {
+    background-color: cornflowerblue; 
+    color: white;
+    padding: 10px 6px;
+    font-size: 19px;
+  }
+  .button1 {
+    background-color: silver;
+    color: black;
+    padding: 10px 11px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 19px;
+  }
+  .popover-title {
+    font-weight: bold;
+  }
+ </style>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<title>Popover example</title>
+</head>
+<body style="background-color:violet;">
+<div class="container">
+    <button class="button" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download"
+     style="margin-left: 9px;">
+     DOWNLOAD</span>
+    </button>
+  
+    <button class="button1" type="button" class="btn btn-secondary" title="Welcome to Bootstrap Tour!" data-container="body" 
+    data-toggle="popover" data-placement="bottom"  data-content="Bootstrap is a free and open-source CSS framework directed at
+     responsive, mobile-first front-end web development. 
+    It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other 
+    interface components."><span class="glyphicon glyphicon-play">DEMO</span>
+  </button>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+</script>
+</body>
+</html>

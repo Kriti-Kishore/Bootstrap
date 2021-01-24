@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+  <title>FLIGHT BOOKING FORM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  	body{
+  		margin: 0;
+  		padding: 0;
+  	}
+  	.container{
+  		width: 1900px;
+  		height: 710px;
+      background:url("flight.jpg");
+      background-size: cover;
+      background-position: center;
+      justify-content: center;
+  	}
+</style>
+</head>
+<body>
+	<div class="container">
+    <a class="navbar-brand" href="#">
+    <img src="logo.jpg" alt="logo" style="width:110px; height: 80px;"></a>
+    <ul class="breadcrumb" style="background-color: violet;">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="flight reservation1.html">Show flights</a></li>
+    <li class="breadcrumb-item"><a href="flight reservation2.html">Flights info</a></li>
+    </ul>
+		<h2 class="text-center"><strong><u>FLIGHT RESERVATION FORM</u></strong></h2>
+		<h3 class="text-center"><u>BOOKING DETAILS</u></h3>
+		<table class="table table-dark" style="margin-left:auto;margin-right:auto;width: 470px;height: 450px;opacity: 0.7;
+    margin-top:-150px;">
+    <tbody>
+      <tr>
+        <td class="text-center" style="height: 50px;"><strong>FROM:</strong></td>
+        <td>
+        <div class="btn-group">
+        <div class="dropdown dropright">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">DELHI</button>
+        <div class="dropdown-menu">
+        <div class="btn-group-vertical">
+        <a class="dropdown-item" href="#">DELHI</a>
+        <a class="dropdown-item" href="#">CHANDIGARH</a>
+        <a class="dropdown-item" href="#">AMRITSAR</a>
+        <a class="dropdown-item" href="#">PATNA</a>
+        <a class="dropdown-item" href="#">MUMBAI</a>
+        <a class="dropdown-item" href="#">AHMEDABAD</a>
+        <a class="dropdown-item" href="#">KOLKATA</a>
+        <a class="dropdown-item" href="#">BANGALORE</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <td class="text-dark"><p><a href="#"><span class="glyphicon glyphicon-calendar"></span></a></p>
+        <input type="number" name="number" placeholder=""></td>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center" style="height: 50px;"><strong>TO:</strong></td>
+        <td>
+        <div class="btn-group">
+        <div class="dropdown dropright">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">BANGALORE</button>
+        <div class="dropdown-menu">
+        <div class="btn-group-vertical">
+        <a class="dropdown-item" href="#">DELHI</a>
+        <a class="dropdown-item" href="#">CHANDIGARH</a>
+        <a class="dropdown-item" href="#">AMRITSAR</a>
+        <a class="dropdown-item" href="#">PATNA</a>
+        <a class="dropdown-item" href="#">MUMBAI</a>
+        <a class="dropdown-item" href="#">AHMEDABAD</a>
+        <a class="dropdown-item" href="#">KOLKATA</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <td class="text-dark"><p><a href="#"><span class="glyphicon glyphicon-calendar"></span></a></p>
+        <input type="number" name="number" placeholder=""></td>
+        </td>
+        </tr>
+      <tr>
+        <td class="text-center" style="height: 50px;"><strong>PASSENGER NAME:</strong></td>
+        <td class="text-dark"><input type="text" name="name" placeholder=""></td>
+      </tr>
+      <tr>
+        <td class="text-center" style="height: 50px;"><strong>GENDER:</strong></td>
+        <td><button type="button" class="btn btn-primary">MALE</button></td>
+        <td><button type="button" class="btn btn-primary">FEMALE</button></td>
+      </tr>
+       <tr>
+        <td class="text-center" style="height: 50px;"><strong>NUMBER OF:</strong></td>
+        <td class="text-dark"><input type="number"  placeholder="CHILD"></td>
+        <td class="text-dark"><input type="number"  placeholder="ADULTS"></td>
+      </tr>
+      <tr>
+        <td class="text-center" style="height: 50px;"><strong>PASSENGER'S AGE:</strong></td>
+        <td class="text-dark"><input type="number"  placeholder="CHILD'S AGE"></td>
+        <td class="text-dark"><input type="number"  placeholder="ADULTS AGE"></td>
+      </tr>
+      <tr>
+        <td class="text-center" style="height: 50px;"><strong>PHONE NUMBER:</strong></td>
+        <td class="text-dark"><input type="text" value="+91" placeholder=" "></td>
+      </tr>
+       <tr>
+        <td class="text-center" style="height: 50px;"><strong>EMAIL ID:</strong></td>
+        <td class="text-dark"><input type="text"  placeholder=" "></td>
+        <td>example:abc@gmail.com</td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-success"><strong>BOOKING STATUS</strong></button></td>
+        <td><button type="button" class="btn btn-danger"><strong>EDIT</strong></button></td>
+        <td><button type="button" class="btn btn-success"><strong>SUBMIT</strong></button></td>
+      </tr>
+      <div class ="nav-item">
+      <div class="btn-group">
+        <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">CHECK IN</button>
+        <div class="dropdown-menu">
+        <div class="btn-group">
+        <a class="dropdown-item" href="#">CHECK IN</a>
+        <a class="dropdown-item" href="#">CHECK OUT</a>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      <h4 class="text-light">HOME<a href="#"><span class="glyphicon glyphicon-home"></span></a></h4>
+      <p class="text-light"><button type="button" class="btn btn-success">
+      <span class="glyphicon glyphicon-log-out"></span>LOGOUT</button></p>
+      <h4><a href="#">LOGIN<span class="glyphicon glyphicon-log-in"></span></a></h4>
+    </tbody>
+		</table>
+    </div>
+    <div>
+  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal" style="margin-top:-1050px;
+  margin-left:1050px;">
+  Click me!</button>
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title"><b>Login Form</b></h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <table border="3" cellpadding="10">
+          <tr><td>Enter Email id:</td></tr> 
+          <tr><td><input type="text" class="table-control" placeholder="Email id"></td></tr>
+          <tr><td>Enter Password:</td></tr>
+          <tr><td><input type="password" class="table-control" placeholder="Password"></td></tr>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger" data-dismiss="modal">Submit</button>&nbsp
+          <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+ <ul class="pagination" style="margin-left: 55px;margin-top: -18px;border:2px solid black;">
+    <li><a href="flight reservation.html">1</a></li>
+    <li><a href="flight reservation1.html">2</a></li>
+    <li><a href="flight reservation2.html">3</a></li>
+ </ul>
+</body>
+</html>

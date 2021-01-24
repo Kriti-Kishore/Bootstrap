@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Library Mgt System2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  	body{
+  		background-color: lightpink;
+  	}
+  </style>
+</head>
+<body>
+  	<div class="dropdown" style="margin-left: 50px; margin-top: 30px;">
+    <div class="col-md-2">		
+    <div class="nav nav-pills nav-stacked">
+    <li class="dropdown">
+    <a class="dropdown-toggle btn btn-success" data-toggle="dropdown" href="#">List of Books</a>
+    <ul class="dropdown-menu">
+      <li><a href="c.jpg">C programming</a></li>
+      <li><a href="python.jpg">Python</a></li>
+      <li><a href="java.jpg">Java</a></li>
+      <li><a href="verbal.jpg">Verbal</a></li>
+    </ul>
+  </li>
+  </div>
+  </div>
+  </div>
+  <a href="#" title="Book Issued" data-toggle="popover" data-content="Bootstrap,Python" style="padding-left:100px;">Click Me</a>
+  <br>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="c.jpg" target="_blank">
+          <img src="c.jpg" style="width:50%">
+          <div class="caption" style="text-align: center;">
+            <p>C Programming</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="python.jpg" target="_blank">
+          <img src="python.jpg" style="width:50%">
+          <div class="caption" style="text-align: center;">
+            <p>Python</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="bootstrap.jpg" target="_blank">
+          <img src="bootstrap.jpg" style="width:50%;">
+          <div class="caption" style="text-align: center;">
+            <p>Bootstrap</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-left: 220px;">
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="verbal.jpg" target="_blank">
+          <img src="verbal.jpg" style="width:50%">
+          <div class="caption" style="text-align: center;">
+            <p>Verbal</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="aptitude.jpg" target="_blank">
+          <img src="aptitude.jpg" style="width:50%">
+          <div class="caption" style="text-align: center;">
+            <p>Logical Reasoning</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="aptitude1.jpg" target="_blank">
+          <img src="aptitude1.jpg" style="width:50%">
+          <div class="caption" style="text-align: center;">
+            <p>Aptitude</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top: -400px; margin-left: -90px;">
+  <a href="#">Books Issued<span class="badge">5</span></a><br>
+  <a href="#">Books Returned<span class="badge">10</span></a><br>
+  <a href="#">Updated Books<span class="badge">2</span></a>
+  </div>
+  <div class="alert alert-success alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Success!</strong>Book has been issued successfully
+  </div>
+  <div class="container" style="margin-top: -150px;">
+  <ul class="list-inline">
+    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Books successfully issued!">Books</a></li>
+  </ul>
+</div>
+<div>
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin-top: -650px;">
+    Open</button>
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title"><b>Login Form</b></h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <table border="5" cellpadding="20">
+          <tr><td>Enter Username:	
+          <input type="text" class="table-control" placeholder="Enter Username"></td></tr>
+          <tr><td>Enter Password:
+          <input type="password" class="table-control" placeholder="Enter Password"></td></tr>
+          </table>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger" data-dismiss="modal">Submit</button>&nbsp
+          <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+</script>
+</div>
+  <ul class="pagination" style="margin-left: 130px;border: 2px solid black;">
+    <li><a href="lib mgt.html">1</a></li>
+    <li><a href="lib mgt2.html">2</a></li>
+    <li><a href="lib mgt3.html">3</a></li>
+  </ul>
+</body>
+</html>

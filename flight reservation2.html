@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FLIGHT BOOKING FORM2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    position: relative; 
+  }
+  #home {padding-top:50px;height:350px;color: #fff; background-color: #1E88E5;}
+  #spicejet{padding-top:20px;height: 300px;color:#fff;background-color:violet }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#home">Home</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Flight lists<span class="caret">
+          </span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#spicejet">Spicejet</a></li>
+              <li><a href="#airindia">Air India</a></li>
+              <li><a href="#indigo">Indigo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+<div id="home" class="container-fluid">
+  <h1>Home</h1>
+  <p>Names of all flights Spicejet,Indigo etc.</p>
+  <img src="spicejet.jpg" style="height: 150px;">
+  <img src="indigo.jpg" style="height: 200px;width: 300px;">
+  <img src="goair.jpg" style="height: 150px;width: 200px;">
+  <img src="airindia.jpg">
+</div>
+<div id="spicejet" class="container-fluid">
+  <h1>1.Spicejet</h1>
+  <p>SpiceJet is an Indian low-cost airline headquartered in Gurgaon,Haryana.</p>
+  <img src="spicejet.jpg" class="img-circle" style="height: 150px;">
+</div>
+<div id="airindia" class="container-fluid">
+  <h1>2.Air India</h1>
+  <p>Air India is the flag carrier airline of India, headquartered at New Delhi.</p>
+  <img src="airindia.jpg" class="img-rounded" style="height: 170px;width: 200px;">
+</div>
+<div id="indigo" class="container-fluid">
+  <h1>3.Indigo</h1>
+  <p>IndiGo is an Indian low-cost airline headquartered in Gurugram, Haryana, India. It is the largest airline in India by passengers carried</p>
+  <img src="indigo.jpg" style="height:180px;">
+</div>
+<button type="button" class="btn btn-danger pull-right" data-toggle="collapse" data-target="#demo" style="margin-right:150px;
+  margin-top:-500px;">Personal Details</button>
+  <div id="demo" class="collapse pull-right" style="margin-top: -550px; margin-right: 150px;">
+    <p style="color: black;"><b>Email id:kishore.kritee@gmail.com Password:12345</b></p>
+  </div>
+<ul class="pagination" style="margin-left: 55px;margin-top:70px;border:2px solid black;">
+    <li><a href="flight reservation.html">1</a></li>
+    <li><a href="flight reservation1.html">2</a></li>
+    <li><a href="flight reservation2.html">3</a></li>
+ </ul>
+</body>
+</html>
